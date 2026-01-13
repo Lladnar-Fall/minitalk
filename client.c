@@ -6,13 +6,13 @@
 /*   By: rlutucir <rlutucir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/12 10:37:24 by rlutucir          #+#    #+#             */
-/*   Updated: 2026/01/12 10:37:28 by rlutucir         ###   ########.fr       */
+/*   Updated: 2026/01/13 01:51:55 by rlutucir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
-void check_bytes(int pid, char c)
+void check_bytes(int pid, unsigned char c)
 {
     int bit;
 
@@ -24,7 +24,7 @@ void check_bytes(int pid, char c)
         else
             kill(pid, SIGUSR2);
         bit++;
-        usleep(100);
+        usleep(800);
     }
 }
 
