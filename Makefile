@@ -25,7 +25,7 @@ $(CLIENT_NAME): $(OBJ_CLIENT) $(LIBFT)
 $(SERVER_NAME): $(OBJ_SERVER) $(LIBFT)
 	$(CC) $(CFLAGS) $(OBJ_SERVER) $(LIBFT) -o $(SERVER_NAME)
 
-clean: 
+clean:
 	rm -f $(OBJ_CLIENT) $(OBJ_SERVER)
 	@make clean -C libft/
 
